@@ -13,4 +13,7 @@ target_include_directories(foxl_base PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}/include/
 )
 
+find_package(glm REQUIRED) # TODO: make this QUIET and clone from GitHub if not found
+target_link_libraries(foxl_base glm::glm fmt::fmt)
+
 unset(FOXL_SOURCES)

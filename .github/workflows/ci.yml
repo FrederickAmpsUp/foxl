@@ -1,0 +1,39 @@
+name: CI Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        build_type: [Release, Debug]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Set up C++ environment
+        uses: aminya/setup-cpp@v1.4.0
+        with:
+          compiler: gcc
+          cmake: true
+          ninja: true
+      - name: Set up Vulkan SDK
+        uses: humbletim/setup-vulkan-sdk@v1.2.1
+        with:
+          vulkan-query-version: 1.4.304.1
+          vulkan-components: Vulkan-Headers, Vulkan-Loader
+          vulkan-use-cache: true
+
+      - name: Build with CMake
+        run: |
+          cmake -Bbuild -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} .
+          cmake --build build --config ${{ matrix.build_type }}
+      

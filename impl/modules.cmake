@@ -1,3 +1,5 @@
+include(FetchContent)
+
 function(get_sources DIRECTORY)
 	include(${CMAKE_CURRENT_SOURCE_DIR}/impl/${DIRECTORY}/sources.cmake)
 	set(FOXL_PROCESSED_SOURCES "")
@@ -13,7 +15,21 @@ target_include_directories(foxl_base PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}/include/
 )
 
-find_package(glm REQUIRED) # TODO: make this QUIET and clone from GitHub if not found
+find_package(glm QUIET)
+
+if(NOT glm_FOUND)
+	FetchContent_Declare(
+		glm
+		GIT_REPOSITORY https://github.com/g-truc/glm.git
+		GIT_TAG master
+	)
+
+	FetchContent_MakeAvailable(glm)
+else()
+	add_library(glm INTERFACE)
+	target_link_libraries(glm glm::glm PUBLIC)
+endif()
+
 target_link_libraries(foxl_base glm::glm fmt::fmt)
 
 unset(FOXL_SOURCES)

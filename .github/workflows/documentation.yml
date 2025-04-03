@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate coverage report
         run: |
-          python3 -m coverxygen --xml-dir docs/xml --src-dir . --format markdown-summary --output docs/coverage.info
+          python3 -m coverxygen --xml-dir docs/xml --src-dir . --format markdown-summary --output extra/docs/coverage.md
 
       - name: Generate docs with extra page
         uses: mattnotmitt/doxygen-action@v1.12.0

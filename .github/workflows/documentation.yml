@@ -25,6 +25,7 @@ jobs:
 
       - name: Generate coverage report
         run: |
+          mkdir -p extra/docs
           python3 -m coverxygen --xml-dir docs/xml --src-dir . --format markdown-summary --output extra/docs/coverage.md
 
       - name: Generate docs with extra page

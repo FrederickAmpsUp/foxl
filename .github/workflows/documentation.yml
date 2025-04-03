@@ -26,9 +26,9 @@ jobs:
       - name: Generate coverage report
         run: |
           mkdir -p extra/docs/
-          mkdir -p template/
-          python3 -m coverxygen --xml-dir docs/xml --src-dir . --format markdown-summary --output docs/coverage.info
-          sed -e "/{{COVERAGE_TABLE}}/r docs/coverage.info" -e "/{{COVERAGE_TABLE}}/d" extra/docs_templates/coverage.md > extra/docs/coverage_data.md
+          mkdir -p data
+          python3 -m coverxygen --xml-dir docs/xml --src-dir . --format markdown-summary --output data/coverage.info
+          sed -e "/{{COVERAGE_TABLE}}/r data/coverage.info" -e "/{{COVERAGE_TABLE}}/d" extra/docs_templates/coverage.md > extra/docs/coverage_data.md
 
       - name: Generate docs with extra page
         uses: mattnotmitt/doxygen-action@v1.12.0

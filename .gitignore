@@ -1,3 +1,5 @@
 build/
 .clangd
-./docs/
+docs/
+!extra/docs/
+extra/docs/coverage_data.md

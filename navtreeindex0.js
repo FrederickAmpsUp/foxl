@@ -39,7 +39,7 @@ var NAVTREEINDEX0 =
 "d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4.html#ae34f264526b6038f2e5a59e9084cb3f4":[2,0,0,0,0],
 "d6/db4/foxl_8hpp.html":[3,0,1,0,1],
 "d6/db4/foxl_8hpp_source.html":[3,0,1,0,1],
-"da/d1b/md_extra_2docs_2coverage.html":[0],
+"d9/da5/coverage_data.html":[0],
 "da/d85/data_8hpp.html":[3,0,1,0,0],
 "da/d85/data_8hpp_source.html":[3,0,1,0,0],
 "dir_12560942d5d3aa63a3aeca00a399c36b.html":[3,0,1,0],

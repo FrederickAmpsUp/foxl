@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
-  <compounddef id="da/d1b/md_extra_2docs_2coverage" kind="page">
-    <compoundname>md_extra_2docs_2coverage</compoundname>
-    <title>coverage</title>
+  <compounddef id="d9/da5/coverage_data" kind="page">
+    <compoundname>coverage_data</compoundname>
+    <title>Documentation Coverage</title>
     <briefdescription>
+<para>A report of what is and isn&apos;t covered in <ref refid="d1/de5/namespacefoxl" kindref="compound">foxl</ref>&apos;s documentation. </para>
     </briefdescription>
     <detaileddescription>
 <para><table rows="9" cols="2"><row>
@@ -45,6 +46,6 @@
 </table>
 </para>
     </detaileddescription>
-    <location file="extra/docs/coverage.md"/>
+    <location file="extra/docs/coverage_data.md"/>
   </compounddef>
 </doxygen>

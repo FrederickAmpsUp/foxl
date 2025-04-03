@@ -1,12 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
-  <compounddef id="d0/d5b/coverage_8md" kind="file" language="Markdown">
-    <compoundname>coverage.md</compoundname>
+  <compounddef id="da/d0f/coverage__data_8md" kind="file" language="Markdown">
+    <compoundname>coverage_data.md</compoundname>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
+<codeline><highlight class="normal">\page<sp/>coverage_data<sp/>Documentation<sp/>Coverage</highlight></codeline>
+<codeline><highlight class="normal">\brief<sp/>A<sp/>report<sp/>of<sp/>what<sp/>is<sp/>and<sp/>isn&apos;t<sp/>covered<sp/>in<sp/>@ref<sp/>foxl&apos;s<sp/>documentation</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">|<sp/>Element<sp/><sp/><sp/><sp/>|<sp/>Value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
 <codeline><highlight class="normal">|------------|---------------|</highlight></codeline>
 <codeline><highlight class="normal">|<sp/>Classes<sp/><sp/><sp/><sp/>|<sp/>100.0%<sp/>(2/2)<sp/><sp/>|</highlight></codeline>
@@ -18,6 +21,6 @@
 <codeline><highlight class="normal">|<sp/>Variables<sp/><sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/3)<sp/><sp/>|</highlight></codeline>
 <codeline><highlight class="normal">|<sp/>Total<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>33.3%<sp/>(9/27)<sp/>|</highlight></codeline>
     </programlisting>
-    <location file="extra/docs/coverage.md"/>
+    <location file="extra/docs/coverage_data.md"/>
   </compounddef>
 </doxygen>

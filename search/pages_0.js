@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coverage_0',['coverage',['../da/d1b/md_extra_2docs_2coverage.html',1,'']]]
+  ['coverage_0',['Documentation Coverage',['../d9/da5/coverage_data.html',1,'']]]
 ];

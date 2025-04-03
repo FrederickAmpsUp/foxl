@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foxl_0',['foxl',['../index.html',1,'']]]
+  ['documentation_20coverage_0',['Documentation Coverage',['../d9/da5/coverage_data.html',1,'']]]
 ];

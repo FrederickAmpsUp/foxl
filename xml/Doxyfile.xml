@@ -368,8 +368,8 @@
   <option  id='DOT_UML_DETAILS' default='yes' type='string'><value>NO</value></option>
   <option  id='DOT_WRAP_THRESHOLD' default='yes' type='int'><value>17</value></option>
   <option  id='TEMPLATE_RELATIONS' default='yes' type='bool'><value>NO</value></option>
-  <option  id='INCLUDE_GRAPH' default='yes' type='bool'><value>YES</value></option>
-  <option  id='INCLUDED_BY_GRAPH' default='yes' type='bool'><value>YES</value></option>
+  <option  id='INCLUDE_GRAPH' default='no' type='bool'><value>NO</value></option>
+  <option  id='INCLUDED_BY_GRAPH' default='no' type='bool'><value>NO</value></option>
   <option  id='CALL_GRAPH' default='yes' type='bool'><value>NO</value></option>
   <option  id='CALLER_GRAPH' default='yes' type='bool'><value>NO</value></option>
   <option  id='GRAPHICAL_HIERARCHY' default='yes' type='bool'><value>YES</value></option>

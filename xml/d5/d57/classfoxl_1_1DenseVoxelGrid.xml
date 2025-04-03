@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d5/d57/classfoxl_1_1DenseVoxelGrid" kind="class" language="C++" prot="public">
+    <compoundname>foxl::DenseVoxelGrid</compoundname>
+    <basecompoundref refid="d3/d15/classfoxl_1_1VoxelStorage" prot="public" virt="non-virtual">foxl::VoxelStorage</basecompoundref>
+    <includes refid="da/d85/data_8hpp" local="no">data.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1af117a6e09d748ae7872548de87ff9f0c" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>[]&gt;</type>
+        <definition>std::unique_ptr&lt;Voxel[]&gt; foxl::DenseVoxelGrid::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>foxl::DenseVoxelGrid::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="56" column="17" bodyfile="include/foxl/data.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae5d5b02a2d82bdcda5a5a750f41529a5" prot="private" static="no" mutable="no">
+        <type>glm::uvec3</type>
+        <definition>glm::uvec3 foxl::DenseVoxelGrid::dims</definition>
+        <argsstring></argsstring>
+        <name>dims</name>
+        <qualifiedname>foxl::DenseVoxelGrid::dims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="57" column="12" bodyfile="include/foxl/data.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1afe59f131be61deb424cafc940cd6c34e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foxl::DenseVoxelGrid::DenseVoxelGrid</definition>
+        <argsstring>(const glm::uvec3 &amp;dims)</argsstring>
+        <name>DenseVoxelGrid</name>
+        <qualifiedname>foxl::DenseVoxelGrid::DenseVoxelGrid</qualifiedname>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>dims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty voxel grid (initialized to matid 0) with the specified dimensions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+        <definition>virtual const Voxel &amp; foxl::DenseVoxelGrid::get</definition>
+        <argsstring>(const glm::uvec3 &amp;pos) const override</argsstring>
+        <name>get</name>
+        <qualifiedname>foxl::DenseVoxelGrid::get</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1a60ea83c09932f0d954af9f75930beea9">get</reimplements>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a constref to a specific voxel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="47" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void foxl::DenseVoxelGrid::set</definition>
+        <argsstring>(const Voxel &amp;voxel, const glm::uvec3 &amp;pos) override</argsstring>
+        <name>set</name>
+        <qualifiedname>foxl::DenseVoxelGrid::set</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4">set</reimplements>
+        <param>
+          <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+          <declname>voxel</declname>
+        </param>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the voxel into the storage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+        <definition>virtual Voxel &amp; foxl::DenseVoxelGrid::operator[]</definition>
+        <argsstring>(const glm::uvec3 &amp;pos) override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>foxl::DenseVoxelGrid::operator[]</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76">operator[]</reimplements>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="51" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+        <definition>virtual const Voxel &amp; foxl::DenseVoxelGrid::operator[]</definition>
+        <argsstring>(const glm::uvec3 &amp;pos) const override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>foxl::DenseVoxelGrid::operator[]</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1a91e878869a0283c8d3b63cf7f00b2577">operator[]</reimplements>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="52" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3c3bed62bf1c957c3a0a115b3336e910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foxl::DenseVoxelGrid::~DenseVoxelGrid</definition>
+        <argsstring>()</argsstring>
+        <name>~DenseVoxelGrid</name>
+        <qualifiedname>foxl::DenseVoxelGrid::~DenseVoxelGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="54" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1af2307de9e3e73bc21bfdc59e061ff042" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int foxl::DenseVoxelGrid::index</definition>
+        <argsstring>(const glm::uvec3 &amp;pos) const</argsstring>
+        <name>index</name>
+        <qualifiedname>foxl::DenseVoxelGrid::index</qualifiedname>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="59" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The simplest form of voxel data storage, just a 3d array of voxels. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>foxl::DenseVoxelGrid</label>
+        <link refid="d5/d57/classfoxl_1_1DenseVoxelGrid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>foxl::VoxelStorage</label>
+        <link refid="d3/d15/classfoxl_1_1VoxelStorage"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>foxl::DenseVoxelGrid</label>
+        <link refid="d5/d57/classfoxl_1_1DenseVoxelGrid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>foxl::VoxelStorage</label>
+        <link refid="d3/d15/classfoxl_1_1VoxelStorage"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/foxl/data.hpp" line="40" column="1" bodyfile="include/foxl/data.hpp" bodystart="40" bodyend="60"/>
+    <listofallmembers>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1af117a6e09d748ae7872548de87ff9f0c" prot="private" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>data</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1afe59f131be61deb424cafc940cd6c34e" prot="public" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>DenseVoxelGrid</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae5d5b02a2d82bdcda5a5a750f41529a5" prot="private" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>dims</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>get</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1af2307de9e3e73bc21bfdc59e061ff042" prot="private" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>index</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>operator[]</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>operator[]</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>set</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3c3bed62bf1c957c3a0a115b3336e910" prot="public" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>~DenseVoxelGrid</name></member>
+      <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a7239a9db6f13a9ffce16a047b91d271d" prot="public" virt="pure-virtual"><scope>foxl::DenseVoxelGrid</scope><name>~VoxelStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="da/d85/data_8hpp" kind="file" language="C++">
+    <compoundname>data.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">glm/glm.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/foxl/data.hpp</label>
+        <link refid="da/d85/data_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d6/d5f/structfoxl_1_1Voxel" prot="public">foxl::Voxel</innerclass>
+    <innerclass refid="d3/d15/classfoxl_1_1VoxelStorage" prot="public">foxl::VoxelStorage</innerclass>
+    <innerclass refid="d5/d57/classfoxl_1_1DenseVoxelGrid" prot="public">foxl::DenseVoxelGrid</innerclass>
+    <innernamespace refid="d1/de5/namespacefoxl">foxl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/glm.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d1/de5/namespacefoxl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d1/de5/namespacefoxl" kindref="compound">foxl</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d6/d5f/structfoxl_1_1Voxel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref><sp/>{</highlight></codeline>
+<codeline lineno="13" refid="d6/d5f/structfoxl_1_1Voxel_1a1d323091f7231049eca3c5c2b4b427a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="d6/d5f/structfoxl_1_1Voxel_1a1d323091f7231049eca3c5c2b4b427a0" kindref="member">matid</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d3/d15/classfoxl_1_1VoxelStorage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/d15/classfoxl_1_1VoxelStorage" kindref="compound">VoxelStorage</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="d3/d15/classfoxl_1_1VoxelStorage_1a60ea83c09932f0d954af9f75930beea9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/><ref refid="d3/d15/classfoxl_1_1VoxelStorage_1a60ea83c09932f0d954af9f75930beea9" kindref="member">get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4" kindref="member">set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/>voxel,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/><ref refid="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32" refid="d3/d15/classfoxl_1_1VoxelStorage_1a91e878869a0283c8d3b63cf7f00b2577" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/><ref refid="d3/d15/classfoxl_1_1VoxelStorage_1a91e878869a0283c8d3b63cf7f00b2577" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d3/d15/classfoxl_1_1VoxelStorage_1a7239a9db6f13a9ffce16a047b91d271d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d3/d15/classfoxl_1_1VoxelStorage_1a7239a9db6f13a9ffce16a047b91d271d" kindref="member">~VoxelStorage</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d5/d57/classfoxl_1_1DenseVoxelGrid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid" kindref="compound">DenseVoxelGrid</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d3/d15/classfoxl_1_1VoxelStorage" kindref="compound">VoxelStorage</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45" refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1afe59f131be61deb424cafc940cd6c34e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1afe59f131be61deb424cafc940cd6c34e" kindref="member">DenseVoxelGrid</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>dims);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/><ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e" kindref="member">get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" kindref="member">set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/>voxel,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/><ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52" refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>&amp;<sp/><ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3c3bed62bf1c957c3a0a115b3336e910" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3c3bed62bf1c957c3a0a115b3336e910" kindref="member">~DenseVoxelGrid</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Voxel[]&gt;<sp/>data;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::uvec3<sp/>dims;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/foxl/data.hpp"/>
+  </compounddef>
+</doxygen>

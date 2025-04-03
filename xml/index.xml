@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.12.0" xml:lang="en-US">
+  <compound refid="d5/d57/classfoxl_1_1DenseVoxelGrid" kind="class"><name>foxl::DenseVoxelGrid</name>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1af117a6e09d748ae7872548de87ff9f0c" kind="variable"><name>data</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae5d5b02a2d82bdcda5a5a750f41529a5" kind="variable"><name>dims</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1afe59f131be61deb424cafc940cd6c34e" kind="function"><name>DenseVoxelGrid</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e" kind="function"><name>get</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" kind="function"><name>set</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" kind="function"><name>operator[]</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9" kind="function"><name>operator[]</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3c3bed62bf1c957c3a0a115b3336e910" kind="function"><name>~DenseVoxelGrid</name></member>
+    <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1af2307de9e3e73bc21bfdc59e061ff042" kind="function"><name>index</name></member>
+  </compound>
+  <compound refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4" kind="struct"><name>fmt::formatter&lt; glm::uvec3 &gt;</name>
+    <member refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4_1ae34f264526b6038f2e5a59e9084cb3f4" kind="function"><name>format</name></member>
+  </compound>
+  <compound refid="d6/d5f/structfoxl_1_1Voxel" kind="struct"><name>foxl::Voxel</name>
+    <member refid="d6/d5f/structfoxl_1_1Voxel_1a1d323091f7231049eca3c5c2b4b427a0" kind="variable"><name>matid</name></member>
+  </compound>
+  <compound refid="d3/d15/classfoxl_1_1VoxelStorage" kind="class"><name>foxl::VoxelStorage</name>
+    <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a60ea83c09932f0d954af9f75930beea9" kind="function"><name>get</name></member>
+    <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4" kind="function"><name>set</name></member>
+    <member refid="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76" kind="function"><name>operator[]</name></member>
+    <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a91e878869a0283c8d3b63cf7f00b2577" kind="function"><name>operator[]</name></member>
+    <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a7239a9db6f13a9ffce16a047b91d271d" kind="function"><name>~VoxelStorage</name></member>
+  </compound>
+  <compound refid="d4/d6d/namespacefmt" kind="namespace"><name>fmt</name>
+  </compound>
+  <compound refid="d1/de5/namespacefoxl" kind="namespace"><name>foxl</name>
+  </compound>
+  <compound refid="d0/d5b/coverage_8md" kind="file"><name>coverage.md</name>
+  </compound>
+  <compound refid="da/d85/data_8hpp" kind="file"><name>data.hpp</name>
+  </compound>
+  <compound refid="d6/db4/foxl_8hpp" kind="file"><name>foxl.hpp</name>
+  </compound>
+  <compound refid="d0/d3f/util_8hpp" kind="file"><name>util.hpp</name>
+  </compound>
+  <compound refid="da/ddd/README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="da/d1b/md_extra_2docs_2coverage" kind="page"><name>md_extra_2docs_2coverage</name>
+  </compound>
+  <compound refid="dir_1362adbb5adfc48a71561620d69934b9" kind="dir"><name>extra/docs</name>
+  </compound>
+  <compound refid="dir_61725470c0c4ad532abb3cb1e156c123" kind="dir"><name>extra</name>
+  </compound>
+  <compound refid="dir_12560942d5d3aa63a3aeca00a399c36b" kind="dir"><name>include/foxl</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

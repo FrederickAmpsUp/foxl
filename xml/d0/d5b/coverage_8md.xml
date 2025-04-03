@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d0/d5b/coverage_8md" kind="file" language="Markdown">
+    <compoundname>coverage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">|<sp/>Element<sp/><sp/><sp/><sp/>|<sp/>Value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|------------|---------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Classes<sp/><sp/><sp/><sp/>|<sp/>100.0%<sp/>(2/2)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/4)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Functions<sp/><sp/>|<sp/><sp/>38.5%<sp/>(5/13)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Namespaces<sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/2)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Pages<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>100.0%<sp/>(1/1)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Structs<sp/><sp/><sp/><sp/>|<sp/><sp/>50.0%<sp/>(1/2)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Variables<sp/><sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/3)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Total<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>33.3%<sp/>(9/27)<sp/>|</highlight></codeline>
+    </programlisting>
+    <location file="extra/docs/coverage.md"/>
+  </compounddef>
+</doxygen>

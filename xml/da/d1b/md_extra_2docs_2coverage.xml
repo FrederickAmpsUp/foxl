@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="da/d1b/md_extra_2docs_2coverage" kind="page">
+    <compoundname>md_extra_2docs_2coverage</compoundname>
+    <title>coverage</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><table rows="9" cols="2"><row>
+<entry thead="yes"><para>Element   </para>
+</entry><entry thead="yes"><para>Value    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Classes   </para>
+</entry><entry thead="no"><para>100.0% (2/2)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Files   </para>
+</entry><entry thead="no"><para>0.0% (0/4)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Functions   </para>
+</entry><entry thead="no"><para>38.5% (5/13)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Namespaces   </para>
+</entry><entry thead="no"><para>0.0% (0/2)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Pages   </para>
+</entry><entry thead="no"><para>100.0% (1/1)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Structs   </para>
+</entry><entry thead="no"><para>50.0% (1/2)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Variables   </para>
+</entry><entry thead="no"><para>0.0% (0/3)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Total   </para>
+</entry><entry thead="no"><para>33.3% (9/27)   </para>
+</entry></row>
+</table>
+</para>
+    </detaileddescription>
+    <location file="extra/docs/coverage.md"/>
+  </compounddef>
+</doxygen>

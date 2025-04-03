@@ -24,8 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "fvox", "index.html", [
-    [ "foxl", "index.html", null ],
+  [ "foxl", "index.html", [
+    [ "coverage", "da/d1b/md_extra_2docs_2coverage.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

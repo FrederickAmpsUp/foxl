@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_12560942d5d3aa63a3aeca00a399c36b" kind="dir">
+    <compoundname>include/foxl</compoundname>
+    <innerfile refid="da/d85/data_8hpp">data.hpp</innerfile>
+    <innerfile refid="d6/db4/foxl_8hpp">foxl.hpp</innerfile>
+    <innerfile refid="d0/d3f/util_8hpp">util.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/foxl/"/>
+  </compounddef>
+</doxygen>

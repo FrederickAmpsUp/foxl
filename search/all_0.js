@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data_2ehpp_0',['data.hpp',['../da/d85/data_8hpp.html',1,'']]],
-  ['densevoxelgrid_1',['DenseVoxelGrid',['../d5/d57/classfoxl_1_1DenseVoxelGrid.html',1,'foxl::DenseVoxelGrid'],['../d5/d57/classfoxl_1_1DenseVoxelGrid.html#afe59f131be61deb424cafc940cd6c34e',1,'foxl::DenseVoxelGrid::DenseVoxelGrid()']]]
+  ['coverage_0',['coverage',['../da/d1b/md_extra_2docs_2coverage.html',1,'']]],
+  ['coverage_2emd_1',['coverage.md',['../d0/d5b/coverage_8md.html',1,'']]]
 ];

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d1/de5/namespacefoxl" kind="namespace" language="C++">
+    <compoundname>foxl</compoundname>
+    <innerclass refid="d5/d57/classfoxl_1_1DenseVoxelGrid" prot="public">foxl::DenseVoxelGrid</innerclass>
+    <innerclass refid="d6/d5f/structfoxl_1_1Voxel" prot="public">foxl::Voxel</innerclass>
+    <innerclass refid="d3/d15/classfoxl_1_1VoxelStorage" prot="public">foxl::VoxelStorage</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/foxl/data.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

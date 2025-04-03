@@ -14,7 +14,20 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Install dependencies
+        run: |
+          pip3 install --break-system-packages coverxygen
+
       - name: Generate docs
+        uses: mattnotmitt/doxygen-action@v1.12.0
+        with:
+          doxyfile-path: 'Doxyfile'
+
+      - name: Generate coverage report
+        run: |
+          python3 -m coverxygen --xml-dir docs/xml --src-dir . --format markdown-summary --output docs/coverage.info
+
+      - name: Generate docs with extra page
         uses: mattnotmitt/doxygen-action@v1.12.0
         with:
           doxyfile-path: 'Doxyfile'

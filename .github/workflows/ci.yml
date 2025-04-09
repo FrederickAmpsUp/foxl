@@ -1,4 +1,4 @@
-name: CI Build
+name: CI Tests
 
 on:
   push:
@@ -36,6 +36,9 @@ jobs:
 
       - name: Build with CMake
         run: |
-          cmake -Bbuild -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} .
+          cmake -Bbuild -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} -DTESTING=ON .
           cmake --build build --config ${{ matrix.build_type }}
+
+      - name: Test with CTest
+        run: ctest --test-dir=build --output-on-failure
       

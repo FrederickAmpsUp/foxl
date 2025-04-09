@@ -18,6 +18,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -104,6 +111,9 @@ $(function(){initNavTree('da/d85/data_8hpp.html','../../'); initResizable(true);
   <div class="headertitle"><div class="title">data.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>This file provides the core voxel storage data structures used by <a class="el" href="../../d1/de5/namespacefoxl.html">foxl</a>.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;glm/glm.hpp&gt;</code><br />
@@ -113,10 +123,20 @@ $(function(){initNavTree('da/d85/data_8hpp.html','../../'); initResizable(true);
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">foxl::Voxel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single voxel. <br  />
+  <a href="../../d6/d5f/structfoxl_1_1Voxel.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">foxl::VoxelStorage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for all voxel storage constructs.  <a href="../../d3/d15/classfoxl_1_1VoxelStorage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html">foxl::DenseVoxelGrid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The simplest and fastest form of voxel data storage.  <a href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classfoxl_1_1BasicSVO.html">foxl::BasicSVO</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A common form of voxel storage based on a hierarchical structure.  <a href="../../de/d60/classfoxl_1_1BasicSVO.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html">foxl::BasicSVO::Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single node in the SVO hierarchy.  <a href="../../dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -124,7 +144,15 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de5/namespacefoxl.html">foxl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file provides the core voxel storage data structures used by <a class="el" href="../../d1/de5/namespacefoxl.html">foxl</a>. </p>
+<p>This file contains the <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">foxl::Voxel</a> struct, the <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">foxl::VoxelStorage</a> interface, and the following classes implementing foxl::VoxelStorage:</p><ul>
+<li><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html">foxl::DenseVoxelGrid</a></li>
+<li><a class="el" href="../../de/d60/classfoxl_1_1BasicSVO.html">foxl::BasicSVO</a></li>
+</ul>
+<dl class="section author"><dt>Author</dt><dd>FrederickAmpsUp </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000001">Todo</a></b></dt><dd>Finish documentation, the <a class="el" href="../../de/d60/classfoxl_1_1BasicSVO.html">foxl::BasicSVO</a> class and add a <code>CompressedSVOBuffer</code> class. </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

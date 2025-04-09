@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['voxel_0',['Voxel',['../d6/d5f/structfoxl_1_1Voxel.html',1,'foxl']]],
-  ['voxelstorage_1',['VoxelStorage',['../d3/d15/classfoxl_1_1VoxelStorage.html',1,'foxl']]]
+  ['formatter_3c_20glm_3a_3auvec3_20_3e_0',['formatter&lt; glm::uvec3 &gt;',['../d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4.html',1,'fmt']]]
 ];

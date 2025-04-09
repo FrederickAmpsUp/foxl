@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
   <compounddef id="d3/d15/classfoxl_1_1VoxelStorage" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>foxl::VoxelStorage</compoundname>
+    <derivedcompoundref refid="de/d60/classfoxl_1_1BasicSVO" prot="public" virt="non-virtual">foxl::BasicSVO</derivedcompoundref>
     <derivedcompoundref refid="d5/d57/classfoxl_1_1DenseVoxelGrid" prot="public" virt="non-virtual">foxl::DenseVoxelGrid</derivedcompoundref>
     <includes refid="da/d85/data_8hpp" local="no">data.hpp</includes>
     <sectiondef kind="public-func">
@@ -11,19 +12,32 @@
         <argsstring>(const glm::uvec3 &amp;pos) const =0</argsstring>
         <name>get</name>
         <qualifiedname>foxl::VoxelStorage::get</qualifiedname>
+        <reimplementedby refid="de/d60/classfoxl_1_1BasicSVO_1a7f97e48a371b7bb5511330e053ce5c89">get</reimplementedby>
         <reimplementedby refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e">get</reimplementedby>
         <param>
           <type>const glm::uvec3 &amp;</type>
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Get a constant reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
-<para>Get a constref to a specific voxel. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position.</para>
+</simplesect>
+To modify the voxel, use <ref refid="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76" kindref="member">operator[]</ref> or <ref refid="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4" kindref="member">set</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="24" column="21"/>
+        <location file="include/foxl/data.hpp" line="85" column="21"/>
       </memberdef>
       <memberdef kind="function" id="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -31,6 +45,7 @@
         <argsstring>(const Voxel &amp;voxel, const glm::uvec3 &amp;pos)=0</argsstring>
         <name>set</name>
         <qualifiedname>foxl::VoxelStorage::set</qualifiedname>
+        <reimplementedby refid="de/d60/classfoxl_1_1BasicSVO_1a603b64d5ebe94be5189ec3ac9b493ebd">set</reimplementedby>
         <reimplementedby refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b">set</reimplementedby>
         <param>
           <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
@@ -41,13 +56,31 @@
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Sets the data of a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
-<para>Copies the voxel into the storage. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voxel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> to copy into the specified position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to modify. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="29" column="14"/>
+        <location file="include/foxl/data.hpp" line="92" column="14"/>
       </memberdef>
       <memberdef kind="function" id="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
@@ -55,18 +88,32 @@
         <argsstring>(const glm::uvec3 &amp;pos)=0</argsstring>
         <name>operator[]</name>
         <qualifiedname>foxl::VoxelStorage::operator[]</qualifiedname>
+        <reimplementedby refid="de/d60/classfoxl_1_1BasicSVO_1aee2b18e8e73c74ccc1f378826728caca">operator[]</reimplementedby>
         <reimplementedby refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2">operator[]</reimplementedby>
         <param>
           <type>const glm::uvec3 &amp;</type>
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Get a mutable reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A mutable reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="31" column="15"/>
+        <location file="include/foxl/data.hpp" line="99" column="15"/>
       </memberdef>
       <memberdef kind="function" id="d3/d15/classfoxl_1_1VoxelStorage_1a91e878869a0283c8d3b63cf7f00b2577" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
@@ -74,41 +121,64 @@
         <argsstring>(const glm::uvec3 &amp;pos) const =0</argsstring>
         <name>operator[]</name>
         <qualifiedname>foxl::VoxelStorage::operator[]</qualifiedname>
+        <reimplementedby refid="de/d60/classfoxl_1_1BasicSVO_1a55fd02daff6e0894f0bd10d40545085f">operator[]</reimplementedby>
         <reimplementedby refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9">operator[]</reimplementedby>
         <param>
           <type>const glm::uvec3 &amp;</type>
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Get a constant reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position.</para>
+</simplesect>
+This is equivalent to <ref refid="d3/d15/classfoxl_1_1VoxelStorage_1a60ea83c09932f0d954af9f75930beea9" kindref="member">get</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="32" column="21"/>
+        <location file="include/foxl/data.hpp" line="107" column="21"/>
       </memberdef>
-      <memberdef kind="function" id="d3/d15/classfoxl_1_1VoxelStorage_1a7239a9db6f13a9ffce16a047b91d271d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="d3/d15/classfoxl_1_1VoxelStorage_1a5428c4dd100db6a336957ce8bd0747a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
         <type></type>
-        <definition>virtual foxl::VoxelStorage::~VoxelStorage</definition>
+        <definition>foxl::VoxelStorage::~VoxelStorage</definition>
         <argsstring>()=0</argsstring>
         <name>~VoxelStorage</name>
         <qualifiedname>foxl::VoxelStorage::~VoxelStorage</qualifiedname>
         <briefdescription>
+<para>This is required because C++ decides to destruct the pure virtual class that should never be constructed. </para>
         </briefdescription>
         <detaileddescription>
+<para>God I wish I could write everything in Rust. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="34" column="9"/>
+        <location file="include/foxl/data.hpp" line="109" column="9" bodyfile="include/foxl/data.hpp" bodystart="117" bodyend="117"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>A base class for all voxel storage constructs. </para>
     </briefdescription>
     <detaileddescription>
-<para>A base class for all voxel storage constructs. </para>
+<para>This class defines common methods for getting and setting voxels and interacting with the structure. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="2">
+        <label>foxl::BasicSVO</label>
+        <link refid="de/d60/classfoxl_1_1BasicSVO"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
         <label>foxl::DenseVoxelGrid</label>
         <link refid="d5/d57/classfoxl_1_1DenseVoxelGrid"/>
         <childnode refid="1" relation="public-inheritance">
@@ -119,13 +189,13 @@
         <link refid="d3/d15/classfoxl_1_1VoxelStorage"/>
       </node>
     </inheritancegraph>
-    <location file="include/foxl/data.hpp" line="19" column="1" bodyfile="include/foxl/data.hpp" bodystart="19" bodyend="35"/>
+    <location file="include/foxl/data.hpp" line="77" column="1" bodyfile="include/foxl/data.hpp" bodystart="77" bodyend="110"/>
     <listofallmembers>
       <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a60ea83c09932f0d954af9f75930beea9" prot="public" virt="pure-virtual"><scope>foxl::VoxelStorage</scope><name>get</name></member>
       <member refid="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76" prot="public" virt="pure-virtual"><scope>foxl::VoxelStorage</scope><name>operator[]</name></member>
       <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a91e878869a0283c8d3b63cf7f00b2577" prot="public" virt="pure-virtual"><scope>foxl::VoxelStorage</scope><name>operator[]</name></member>
       <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4" prot="public" virt="pure-virtual"><scope>foxl::VoxelStorage</scope><name>set</name></member>
-      <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a7239a9db6f13a9ffce16a047b91d271d" prot="public" virt="pure-virtual"><scope>foxl::VoxelStorage</scope><name>~VoxelStorage</name></member>
+      <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a5428c4dd100db6a336957ce8bd0747a5" prot="public" virt="pure-virtual"><scope>foxl::VoxelStorage</scope><name>~VoxelStorage</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

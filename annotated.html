@@ -18,6 +18,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -102,13 +109,16 @@ $(function(){initNavTree('annotated.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock">Here are the classes, structs, unions and interfaces with brief descriptions:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:dynsection.toggleLevel(1);">1</span><span onclick="javascript:dynsection.toggleLevel(2);">2</span>]</div><table class="directory">
+<div class="levels">[detail level <span onclick="javascript:dynsection.toggleLevel(1);">1</span><span onclick="javascript:dynsection.toggleLevel(2);">2</span><span onclick="javascript:dynsection.toggleLevel(3);">3</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="dynsection.toggleFolder('0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><b>fmt</b></td><td class="desc"></td></tr>
 <tr id="row_0_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4.html" target="_self">formatter&lt; glm::uvec3 &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_1_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="dynsection.toggleFolder('1_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d1/de5/namespacefoxl.html" target="_self">foxl</a></td><td class="desc"></td></tr>
-<tr id="row_1_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d57/classfoxl_1_1DenseVoxelGrid.html" target="_self">DenseVoxelGrid</a></td><td class="desc"></td></tr>
-<tr id="row_1_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/d5f/structfoxl_1_1Voxel.html" target="_self">Voxel</a></td><td class="desc"></td></tr>
-<tr id="row_1_2_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d3/d15/classfoxl_1_1VoxelStorage.html" target="_self">VoxelStorage</a></td><td class="desc"></td></tr>
+<tr id="row_1_0_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_1_0_" class="arrow" onclick="dynsection.toggleFolder('1_0_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="de/d60/classfoxl_1_1BasicSVO.html" target="_self">BasicSVO</a></td><td class="desc">A common form of voxel storage based on a hierarchical structure </td></tr>
+<tr id="row_1_0_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html" target="_self">Node</a></td><td class="desc">A single node in the SVO hierarchy </td></tr>
+<tr id="row_1_1_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d57/classfoxl_1_1DenseVoxelGrid.html" target="_self">DenseVoxelGrid</a></td><td class="desc">The simplest and fastest form of voxel data storage </td></tr>
+<tr id="row_1_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/d5f/structfoxl_1_1Voxel.html" target="_self">Voxel</a></td><td class="desc">A single voxel. <br  />
+ </td></tr>
+<tr id="row_1_3_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d3/d15/classfoxl_1_1VoxelStorage.html" target="_self">VoxelStorage</a></td><td class="desc">A base class for all voxel storage constructs </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->

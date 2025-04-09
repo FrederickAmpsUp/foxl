@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kind="struct" language="C++" prot="public">
+    <compoundname>foxl::BasicSVO::Node</compoundname>
+    <includes refid="da/d85/data_8hpp" local="no">data.hpp</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a11b6a19becf9abec274759246fcbee01" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t foxl::BasicSVO::Node::IS_VOXEL</definition>
+        <argsstring></argsstring>
+        <name>IS_VOXEL</name>
+        <qualifiedname>foxl::BasicSVO::Node::IS_VOXEL</qualifiedname>
+        <initializer>= 0x01</initializer>
+        <briefdescription>
+<para>The &quot;is voxel&quot; flag, representing if the node is a leaf node in the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="173" column="22" bodyfile="include/foxl/data.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ad55302750b992b68458fb50d6531c518" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t foxl::BasicSVO::Node::IS_EMPTY</definition>
+        <argsstring></argsstring>
+        <name>IS_EMPTY</name>
+        <qualifiedname>foxl::BasicSVO::Node::IS_EMPTY</qualifiedname>
+        <initializer>= 0x02</initializer>
+        <briefdescription>
+<para>The &quot;is empty&quot; flag, representing if the node contains zero children. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="177" column="22" bodyfile="include/foxl/data.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a6e25291bee32f03ef2df5bdeb46098eb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t foxl::BasicSVO::Node::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>foxl::BasicSVO::Node::flags</qualifiedname>
+        <briefdescription>
+<para>The bitset of flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="182" column="9" bodyfile="include/foxl/data.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ac223522714bacb8a0f0a2c8fcfd4e69a" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref></type>
+        <definition>Voxel foxl::BasicSVO::Node::voxel</definition>
+        <argsstring></argsstring>
+        <name>voxel</name>
+        <qualifiedname>foxl::BasicSVO::Node::voxel</qualifiedname>
+        <briefdescription>
+<para>The potential <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> represented by the node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="191" column="7" bodyfile="include/foxl/data.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a7a09bf7c09288579d744b641e6ced4d6" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref>[8]&gt;</type>
+        <definition>std::unique_ptr&lt;Node[8]&gt; foxl::BasicSVO::Node::children</definition>
+        <argsstring></argsstring>
+        <name>children</name>
+        <qualifiedname>foxl::BasicSVO::Node::children</qualifiedname>
+        <briefdescription>
+<para>The potential list of child <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref> s under this <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="195" column="17" bodyfile="include/foxl/data.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a10e827a11de42916f9b207125c7c3ea2" prot="public" static="no" mutable="no">
+        <type>union <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">foxl::BasicSVO::Node</ref></type>
+        <definition>union foxl::BasicSVO::Node foxl::BasicSVO::Node</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>foxl::BasicSVO::Node</qualifiedname>
+        <briefdescription>
+<para>Using a union allows us to store either a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> or the child <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref> s with a smaller memory footprint. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="196" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ad5ea332fb06719db8f1bf44df515de5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foxl::BasicSVO::Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <qualifiedname>foxl::BasicSVO::Node::Node</qualifiedname>
+        <briefdescription>
+<para>Creates a new empty node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a8c02f592498635d7e7696c5b48581d45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool foxl::BasicSVO::Node::is_voxel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_voxel</name>
+        <qualifiedname>foxl::BasicSVO::Node::is_voxel</qualifiedname>
+        <briefdescription>
+<para>Returns wether this <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref> is a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Wether this <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref> is a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="202" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a0c352f6694d00970f7b460eba469d82f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool foxl::BasicSVO::Node::is_empty</definition>
+        <argsstring>() const</argsstring>
+        <name>is_empty</name>
+        <qualifiedname>foxl::BasicSVO::Node::is_empty</qualifiedname>
+        <briefdescription>
+<para>Returns wether this <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref> is emtpy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Wether this <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref> is empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="207" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ad1e5547d918d82f90eede3607c482fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foxl::BasicSVO::Node::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <qualifiedname>foxl::BasicSVO::Node::~Node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="209" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A single node in the SVO hierarchy. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct contains a set of flags, and zero or one of the following: <linebreak/>
+<itemizedlist>
+<listitem><para>A single <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref>, or</para>
+</listitem><listitem><para>A list of 8 child <ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref> s. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>foxl::BasicSVO::Node</label>
+        <link refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>voxel</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>foxl::Voxel</label>
+        <link refid="d6/d5f/structfoxl_1_1Voxel"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/foxl/data.hpp" line="164" column="1" bodyfile="include/foxl/data.hpp" bodystart="164" bodyend="210"/>
+    <listofallmembers>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a7a09bf7c09288579d744b641e6ced4d6" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>children</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a6e25291bee32f03ef2df5bdeb46098eb" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>flags</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ad55302750b992b68458fb50d6531c518" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>IS_EMPTY</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a0c352f6694d00970f7b460eba469d82f" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>is_empty</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a11b6a19becf9abec274759246fcbee01" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>IS_VOXEL</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1a8c02f592498635d7e7696c5b48581d45" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>is_voxel</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ad5ea332fb06719db8f1bf44df515de5b" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>Node</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ac223522714bacb8a0f0a2c8fcfd4e69a" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>voxel</name></member>
+      <member refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node_1ad1e5547d918d82f90eede3607c482fde" prot="public" virt="non-virtual"><scope>foxl::BasicSVO::Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

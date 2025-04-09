@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="56" column="17" bodyfile="include/foxl/data.hpp" bodystart="56" bodyend="-1"/>
+        <location file="include/foxl/data.hpp" line="142" column="17" bodyfile="include/foxl/data.hpp" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae5d5b02a2d82bdcda5a5a750f41529a5" prot="private" static="no" mutable="no">
         <type>glm::uvec3</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="57" column="12" bodyfile="include/foxl/data.hpp" bodystart="57" bodyend="-1"/>
+        <location file="include/foxl/data.hpp" line="143" column="12" bodyfile="include/foxl/data.hpp" bodystart="143" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -46,13 +46,23 @@
           <declname>dims</declname>
         </param>
         <briefdescription>
+<para>Creates an empty voxel grid with the specified dimensions. </para>
         </briefdescription>
         <detaileddescription>
-<para>Creates an empty voxel grid (initialized to matid 0) with the specified dimensions. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dimensions (XYZ) of the voxel grid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="45" column="1"/>
+        <location file="include/foxl/data.hpp" line="131" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
@@ -66,13 +76,25 @@
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Get a constant reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
-<para>Get a constref to a specific voxel. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position.</para>
+</simplesect>
+To modify the voxel, use <ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" kindref="member">operator[]</ref> or <ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" kindref="member">set</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="47" column="21"/>
+        <location file="include/foxl/data.hpp" line="133" column="21"/>
       </memberdef>
       <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -90,13 +112,31 @@
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Sets the data of a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
-<para>Copies the voxel into the storage. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voxel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> to copy into the specified position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to modify. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="49" column="14"/>
+        <location file="include/foxl/data.hpp" line="135" column="14"/>
       </memberdef>
       <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
@@ -110,12 +150,25 @@
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Get a mutable reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A mutable reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="51" column="15"/>
+        <location file="include/foxl/data.hpp" line="137" column="15"/>
       </memberdef>
       <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
@@ -129,17 +182,30 @@
           <declname>pos</declname>
         </param>
         <briefdescription>
+<para>Get a constant reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position.</para>
+</simplesect>
+This is equivalent to <ref refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a744af785836a2586f80f96a3f5c1882e" kindref="member">get</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="52" column="21"/>
+        <location file="include/foxl/data.hpp" line="138" column="21"/>
       </memberdef>
-      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3c3bed62bf1c957c3a0a115b3336e910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3b85f501e8af0dcb77a648cb23fe1b2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
-        <definition>foxl::DenseVoxelGrid::~DenseVoxelGrid</definition>
-        <argsstring>()</argsstring>
+        <definition>virtual foxl::DenseVoxelGrid::~DenseVoxelGrid</definition>
+        <argsstring>() override=default</argsstring>
         <name>~DenseVoxelGrid</name>
         <qualifiedname>foxl::DenseVoxelGrid::~DenseVoxelGrid</qualifiedname>
         <briefdescription>
@@ -148,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="54" column="1"/>
+        <location file="include/foxl/data.hpp" line="140" column="9"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -168,13 +234,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/foxl/data.hpp" line="59" column="14"/>
+        <location file="include/foxl/data.hpp" line="145" column="14"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>The simplest and fastest form of voxel data storage. </para>
     </briefdescription>
     <detaileddescription>
-<para>The simplest form of voxel data storage, just a 3d array of voxels. </para>
+<para>This structure stores voxels in a dense grid, or a 3-d array of voxels. <linebreak/>
+ It&apos;s very simple to implement and very fast to access, but uses a lot of memory and is slow for tasks like raycasting. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -200,7 +268,7 @@
         <link refid="d3/d15/classfoxl_1_1VoxelStorage"/>
       </node>
     </collaborationgraph>
-    <location file="include/foxl/data.hpp" line="40" column="1" bodyfile="include/foxl/data.hpp" bodystart="40" bodyend="60"/>
+    <location file="include/foxl/data.hpp" line="125" column="1" bodyfile="include/foxl/data.hpp" bodystart="125" bodyend="146"/>
     <listofallmembers>
       <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1af117a6e09d748ae7872548de87ff9f0c" prot="private" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>data</name></member>
       <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1afe59f131be61deb424cafc940cd6c34e" prot="public" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>DenseVoxelGrid</name></member>
@@ -210,8 +278,8 @@
       <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a4a6c5628e46df8c6a5f14a2dfeeabdb2" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>operator[]</name></member>
       <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1ae9b9c74f1ed7b0caf2b061cf241694c9" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>operator[]</name></member>
       <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1aa8df9fe72ae5603ca323a9f815583b9b" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>set</name></member>
-      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3c3bed62bf1c957c3a0a115b3336e910" prot="public" virt="non-virtual"><scope>foxl::DenseVoxelGrid</scope><name>~DenseVoxelGrid</name></member>
-      <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a7239a9db6f13a9ffce16a047b91d271d" prot="public" virt="pure-virtual"><scope>foxl::DenseVoxelGrid</scope><name>~VoxelStorage</name></member>
+      <member refid="d5/d57/classfoxl_1_1DenseVoxelGrid_1a3b85f501e8af0dcb77a648cb23fe1b2f" prot="public" virt="virtual"><scope>foxl::DenseVoxelGrid</scope><name>~DenseVoxelGrid</name></member>
+      <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a5428c4dd100db6a336957ce8bd0747a5" prot="public" virt="pure-virtual"><scope>foxl::DenseVoxelGrid</scope><name>~VoxelStorage</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

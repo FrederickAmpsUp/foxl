@@ -18,6 +18,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -109,8 +116,8 @@ $(function(){initNavTree('d5/d57/classfoxl_1_1DenseVoxelGrid.html','../../'); in
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html#a4a6c5628e46df8c6a5f14a2dfeeabdb2">operator[]</a>(const glm::uvec3 &amp;pos) override</td><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html">foxl::DenseVoxelGrid</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html#ae9b9c74f1ed7b0caf2b061cf241694c9">operator[]</a>(const glm::uvec3 &amp;pos) const override</td><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html">foxl::DenseVoxelGrid</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html#aa8df9fe72ae5603ca323a9f815583b9b">set</a>(const Voxel &amp;voxel, const glm::uvec3 &amp;pos) override</td><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html">foxl::DenseVoxelGrid</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html#a3c3bed62bf1c957c3a0a115b3336e910">~DenseVoxelGrid</a>()</td><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html">foxl::DenseVoxelGrid</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#a7239a9db6f13a9ffce16a047b91d271d">~VoxelStorage</a>()=0</td><td class="entry"><a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">foxl::VoxelStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html#a3b85f501e8af0dcb77a648cb23fe1b2f">~DenseVoxelGrid</a>() override=default</td><td class="entry"><a class="el" href="../../d5/d57/classfoxl_1_1DenseVoxelGrid.html">foxl::DenseVoxelGrid</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#a5428c4dd100db6a336957ce8bd0747a5">~VoxelStorage</a>()=0</td><td class="entry"><a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">foxl::VoxelStorage</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

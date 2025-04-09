@@ -18,6 +18,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -99,33 +106,187 @@ $(function(){initNavTree('d6/d5f/structfoxl_1_1Voxel.html','../../'); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d6/d0b/structfoxl_1_1Voxel-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">foxl::Voxel Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>A single voxel. <br  />
+  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../da/d85/data_8hpp_source.html">data.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a1d323091f7231049eca3c5c2b4b427a0" id="r_a1d323091f7231049eca3c5c2b4b427a0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d323091f7231049eca3c5c2b4b427a0">matid</a></td></tr>
-<tr class="separator:a1d323091f7231049eca3c5c2b4b427a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3cebee82f414303fadb015ca523831fd" id="r_a3cebee82f414303fadb015ca523831fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cebee82f414303fadb015ca523831fd">Voxel</a> (bool <a class="el" href="#ab84e4a8fcd9f7b738fd91c78031ea190">is_filled</a>, uint32_t <a class="el" href="#af12ab68dfd75727b4953a4a302a73f6e">prop_idx</a>)</td></tr>
+<tr class="memdesc:a3cebee82f414303fadb015ca523831fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new voxel.  <br /></td></tr>
+<tr class="separator:a3cebee82f414303fadb015ca523831fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc34840bfffc630e75c16039aea1c859" id="r_afc34840bfffc630e75c16039aea1c859"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc34840bfffc630e75c16039aea1c859">Voxel</a> ()</td></tr>
+<tr class="memdesc:afc34840bfffc630e75c16039aea1c859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new (empty) voxel.  <br /></td></tr>
+<tr class="separator:afc34840bfffc630e75c16039aea1c859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84e4a8fcd9f7b738fd91c78031ea190" id="r_ab84e4a8fcd9f7b738fd91c78031ea190"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab84e4a8fcd9f7b738fd91c78031ea190">is_filled</a> () const</td></tr>
+<tr class="memdesc:ab84e4a8fcd9f7b738fd91c78031ea190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the voxel's <code>is_filled</code> property.  <br /></td></tr>
+<tr class="separator:ab84e4a8fcd9f7b738fd91c78031ea190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12ab68dfd75727b4953a4a302a73f6e" id="r_af12ab68dfd75727b4953a4a302a73f6e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af12ab68dfd75727b4953a4a302a73f6e">prop_idx</a> () const</td></tr>
+<tr class="memdesc:af12ab68dfd75727b4953a4a302a73f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the voxel's <code>prop_idx</code> property.  <br /></td></tr>
+<tr class="separator:af12ab68dfd75727b4953a4a302a73f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29330bdf9e4779d009bfe4a22143a22f" id="r_a29330bdf9e4779d009bfe4a22143a22f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29330bdf9e4779d009bfe4a22143a22f">is_filled</a> (bool is_filled)</td></tr>
+<tr class="memdesc:a29330bdf9e4779d009bfe4a22143a22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voxel's <code>is_filled</code> property.  <br /></td></tr>
+<tr class="separator:a29330bdf9e4779d009bfe4a22143a22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19adb769b41f521ee36252b4f5b84b9" id="r_ab19adb769b41f521ee36252b4f5b84b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab19adb769b41f521ee36252b4f5b84b9">prop_idx</a> (uint32_t prop_idx)</td></tr>
+<tr class="memdesc:ab19adb769b41f521ee36252b4f5b84b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voxel's <code>prop_idx</code> property.  <br /></td></tr>
+<tr class="separator:ab19adb769b41f521ee36252b4f5b84b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A single voxel's data. In Voxelforge, this simply stores a single 32-bit int, an index into a material/property array. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1d323091f7231049eca3c5c2b4b427a0" name="a1d323091f7231049eca3c5c2b4b427a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d323091f7231049eca3c5c2b4b427a0">&#9670;&#160;</a></span>matid</h2>
+<div class="textblock"><p>A single voxel. <br  />
+ </p>
+<p>This struct stores a boolean <code>is_filled</code> and a 23-bit uint <code>prop_idx</code>. <br  />
+ <code>is_filled</code> is true if the voxel "exists" in its space. <br  />
+ <code>prop_idx</code> is an index into an array of properties. These may be visual, physical, or any other property. <br  />
+</p>
+<p><code>is_filled</code> and <code>prop_idx</code> are compressed into a single 32-bit uint. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3cebee82f414303fadb015ca523831fd" name="a3cebee82f414303fadb015ca523831fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cebee82f414303fadb015ca523831fd">&#9670;&#160;</a></span>Voxel() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t foxl::Voxel::matid</td>
+          <td class="memname">foxl::Voxel::Voxel </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_filled</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>prop_idx</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates a new voxel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_filled</td><td>The value of the voxel's <code>is_filled</code> property. </td></tr>
+    <tr><td class="paramname">prop_idx</td><td>The value of the voxel's <code>prop_idx</code> property.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>It's not recommended to directly create a voxel, instead use a voxel generated by a <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">VoxelStorage</a> implementation. </p>
+
+</div>
+</div>
+<a id="afc34840bfffc630e75c16039aea1c859" name="afc34840bfffc630e75c16039aea1c859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc34840bfffc630e75c16039aea1c859">&#9670;&#160;</a></span>Voxel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">foxl::Voxel::Voxel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new (empty) voxel. </p>
+<p>It's not recommended to directly create a voxel, instead use a voxel generated by a <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">VoxelStorage</a> implementation </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab84e4a8fcd9f7b738fd91c78031ea190" name="ab84e4a8fcd9f7b738fd91c78031ea190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84e4a8fcd9f7b738fd91c78031ea190">&#9670;&#160;</a></span>is_filled() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool foxl::Voxel::is_filled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the voxel's <code>is_filled</code> property. </p>
+<dl class="section return"><dt>Returns</dt><dd>The voxel's <code>is_filled</code> property. </dd></dl>
+
+</div>
+</div>
+<a id="a29330bdf9e4779d009bfe4a22143a22f" name="a29330bdf9e4779d009bfe4a22143a22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29330bdf9e4779d009bfe4a22143a22f">&#9670;&#160;</a></span>is_filled() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void foxl::Voxel::is_filled </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_filled</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the voxel's <code>is_filled</code> property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_filled</td><td>The new value of the <code>is_filled</code> property. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af12ab68dfd75727b4953a4a302a73f6e" name="af12ab68dfd75727b4953a4a302a73f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12ab68dfd75727b4953a4a302a73f6e">&#9670;&#160;</a></span>prop_idx() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t foxl::Voxel::prop_idx </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the voxel's <code>prop_idx</code> property. </p>
+<dl class="section return"><dt>Returns</dt><dd>The voxel's <code>prop_idx</code> property. </dd></dl>
+
+</div>
+</div>
+<a id="ab19adb769b41f521ee36252b4f5b84b9" name="ab19adb769b41f521ee36252b4f5b84b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19adb769b41f521ee36252b4f5b84b9">&#9670;&#160;</a></span>prop_idx() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void foxl::Voxel::prop_idx </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>prop_idx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the voxel's <code>prop_idx</code> property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prop_idx</td><td>The new value of the <code>prop_idx</code> property. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

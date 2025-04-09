@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['coverage_0',['Documentation Coverage',['../d9/da5/coverage_data.html',1,'']]],
-  ['coverage_5fdata_2emd_1',['coverage_data.md',['../da/d0f/coverage__data_8md.html',1,'']]]
+  ['basicsvo_0',['BasicSVO',['../de/d60/classfoxl_1_1BasicSVO.html',1,'foxl::BasicSVO'],['../de/d60/classfoxl_1_1BasicSVO.html#af65f2e046787c0b1e6682033b2bcd162',1,'foxl::BasicSVO::BasicSVO()']]]
 ];

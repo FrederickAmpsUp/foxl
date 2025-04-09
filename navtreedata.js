@@ -26,8 +26,13 @@ var NAVTREE =
 [
   [ "foxl", "index.html", [
     [ "Documentation Coverage", "d9/da5/coverage_data.html", null ],
+    [ "Todo List", "dd/da0/todo.html", null ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

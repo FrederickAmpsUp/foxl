@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="da/d32/namespacefoxl_1_1math" kind="namespace" language="C++">
+    <compoundname>foxl::math</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="da/d32/namespacefoxl_1_1math_1ac23a5ebdcf32a561780dc923f7c9dbe7" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t foxl::math::next_power_of_2</definition>
+        <argsstring>(uint32_t x)</argsstring>
+        <name>next_power_of_2</name>
+        <qualifiedname>foxl::math::next_power_of_2</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates <formula id="0">$y$</formula>, where <formula id="1">$y = 2^{n}$</formula> and <formula id="2">$y &gt;= x$</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to calculate y based on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><formula id="3">$2^{\lceil \log_2(x) \rceil}$</formula> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/math.hpp" line="13" column="20" declfile="include/foxl/math.hpp" declline="13" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d32/namespacefoxl_1_1math_1aff01c445678420ff243f82aba9da6324" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::uvec3</type>
+        <definition>glm::uvec3 foxl::math::round_up_to_cube_pow2</definition>
+        <argsstring>(glm::uvec3 v)</argsstring>
+        <name>round_up_to_cube_pow2</name>
+        <qualifiedname>foxl::math::round_up_to_cube_pow2</qualifiedname>
+        <param>
+          <type>glm::uvec3</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/math.hpp" line="15" column="22" declfile="include/foxl/math.hpp" declline="15" declcolumn="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/foxl/math.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

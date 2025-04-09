@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matid_0',['matid',['../d6/d5f/structfoxl_1_1Voxel.html#a1d323091f7231049eca3c5c2b4b427a0',1,'foxl::Voxel']]]
+  ['children_0',['children',['../dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html#a7a09bf7c09288579d744b641e6ced4d6',1,'foxl::BasicSVO::Node']]]
 ];

@@ -10,16 +10,16 @@
 <codeline><highlight class="normal">\page<sp/>coverage_data<sp/>Documentation<sp/>Coverage</highlight></codeline>
 <codeline><highlight class="normal">\brief<sp/>A<sp/>report<sp/>of<sp/>what<sp/>is<sp/>and<sp/>isn&apos;t<sp/>covered<sp/>in<sp/>@ref<sp/>foxl&apos;s<sp/>documentation</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">|<sp/>Element<sp/><sp/><sp/><sp/>|<sp/>Value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|------------|---------------|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Classes<sp/><sp/><sp/><sp/>|<sp/>100.0%<sp/>(2/2)<sp/><sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/4)<sp/><sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Functions<sp/><sp/>|<sp/><sp/>38.5%<sp/>(5/13)<sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Namespaces<sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/2)<sp/><sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Pages<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>100.0%<sp/>(1/1)<sp/><sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Structs<sp/><sp/><sp/><sp/>|<sp/><sp/>50.0%<sp/>(1/2)<sp/><sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Variables<sp/><sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/3)<sp/><sp/>|</highlight></codeline>
-<codeline><highlight class="normal">|<sp/>Total<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>33.3%<sp/>(9/27)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Element<sp/><sp/><sp/><sp/>|<sp/>Value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|------------|----------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Classes<sp/><sp/><sp/><sp/>|<sp/>100.0%<sp/>(3/3)<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Files<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>20.0%<sp/>(1/5)<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Functions<sp/><sp/>|<sp/><sp/>80.6%<sp/>(25/31)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Namespaces<sp/>|<sp/><sp/><sp/>0.0%<sp/>(0/3)<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Pages<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>100.0%<sp/>(2/2)<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Structs<sp/><sp/><sp/><sp/>|<sp/><sp/>66.7%<sp/>(2/3)<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Variables<sp/><sp/>|<sp/><sp/>54.5%<sp/>(6/11)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Total<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>67.2%<sp/>(39/58)<sp/>|</highlight></codeline>
     </programlisting>
     <location file="extra/docs/coverage_data.md"/>
   </compounddef>

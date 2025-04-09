@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['operator_5b_5d_0',['operator[]',['../d3/d15/classfoxl_1_1VoxelStorage.html#af8772f0e02a73dce141c70000ced3e76',1,'foxl::VoxelStorage::operator[](const glm::uvec3 &amp;pos)=0'],['../d3/d15/classfoxl_1_1VoxelStorage.html#a91e878869a0283c8d3b63cf7f00b2577',1,'foxl::VoxelStorage::operator[](const glm::uvec3 &amp;pos) const =0'],['../d5/d57/classfoxl_1_1DenseVoxelGrid.html#a4a6c5628e46df8c6a5f14a2dfeeabdb2',1,'foxl::DenseVoxelGrid::operator[](const glm::uvec3 &amp;pos) override'],['../d5/d57/classfoxl_1_1DenseVoxelGrid.html#ae9b9c74f1ed7b0caf2b061cf241694c9',1,'foxl::DenseVoxelGrid::operator[](const glm::uvec3 &amp;pos) const override']]]
+  ['is_5fempty_0',['IS_EMPTY',['../dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html#ad55302750b992b68458fb50d6531c518',1,'foxl::BasicSVO::Node']]],
+  ['is_5fempty_1',['is_empty',['../dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html#a0c352f6694d00970f7b460eba469d82f',1,'foxl::BasicSVO::Node']]],
+  ['is_5ffilled_2',['is_filled',['../d6/d5f/structfoxl_1_1Voxel.html#ab84e4a8fcd9f7b738fd91c78031ea190',1,'foxl::Voxel::is_filled() const'],['../d6/d5f/structfoxl_1_1Voxel.html#a29330bdf9e4779d009bfe4a22143a22f',1,'foxl::Voxel::is_filled(bool is_filled)']]],
+  ['is_5fvoxel_3',['IS_VOXEL',['../dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html#a11b6a19becf9abec274759246fcbee01',1,'foxl::BasicSVO::Node']]],
+  ['is_5fvoxel_4',['is_voxel',['../dc/d7f/structfoxl_1_1BasicSVO_1_1Node.html#a8c02f592498635d7e7696c5b48581d45',1,'foxl::BasicSVO::Node']]]
 ];

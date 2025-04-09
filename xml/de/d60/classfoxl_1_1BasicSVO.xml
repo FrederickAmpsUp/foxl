@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="de/d60/classfoxl_1_1BasicSVO" kind="class" language="C++" prot="public">
+    <compoundname>foxl::BasicSVO</compoundname>
+    <basecompoundref refid="d3/d15/classfoxl_1_1VoxelStorage" prot="public" virt="non-virtual">foxl::VoxelStorage</basecompoundref>
+    <includes refid="da/d85/data_8hpp" local="no">data.hpp</includes>
+    <innerclass refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" prot="public">foxl::BasicSVO::Node</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d60/classfoxl_1_1BasicSVO_1aa447d2ba413111920e6476f2144b6092" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/d7f/structfoxl_1_1BasicSVO_1_1Node" kindref="compound">Node</ref></type>
+        <definition>Node foxl::BasicSVO::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <qualifiedname>foxl::BasicSVO::root</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="227" column="6" bodyfile="include/foxl/data.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d60/classfoxl_1_1BasicSVO_1a84abb8eb2b39974d949b7fc2777c674e" prot="private" static="no" mutable="no">
+        <type>glm::uvec3</type>
+        <definition>glm::uvec3 foxl::BasicSVO::dims</definition>
+        <argsstring></argsstring>
+        <name>dims</name>
+        <qualifiedname>foxl::BasicSVO::dims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="228" column="12" bodyfile="include/foxl/data.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d60/classfoxl_1_1BasicSVO_1af65f2e046787c0b1e6682033b2bcd162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foxl::BasicSVO::BasicSVO</definition>
+        <argsstring>(glm::uvec3 dims)</argsstring>
+        <name>BasicSVO</name>
+        <qualifiedname>foxl::BasicSVO::BasicSVO</qualifiedname>
+        <param>
+          <type>glm::uvec3</type>
+          <declname>dims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty SVO with at least the specified dimensions. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum dimension to use for the SVO. This may be rounded up to the nearest cube with side lengts which are a power of 2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d60/classfoxl_1_1BasicSVO_1a7f97e48a371b7bb5511330e053ce5c89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+        <definition>virtual const Voxel &amp; foxl::BasicSVO::get</definition>
+        <argsstring>(const glm::uvec3 &amp;pos) const override</argsstring>
+        <name>get</name>
+        <qualifiedname>foxl::BasicSVO::get</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1a60ea83c09932f0d954af9f75930beea9">get</reimplements>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Get a constant reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position.</para>
+</simplesect>
+To modify the voxel, use <ref refid="de/d60/classfoxl_1_1BasicSVO_1aee2b18e8e73c74ccc1f378826728caca" kindref="member">operator[]</ref> or <ref refid="de/d60/classfoxl_1_1BasicSVO_1a603b64d5ebe94be5189ec3ac9b493ebd" kindref="member">set</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="218" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d60/classfoxl_1_1BasicSVO_1a603b64d5ebe94be5189ec3ac9b493ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void foxl::BasicSVO::set</definition>
+        <argsstring>(const Voxel &amp;voxel, const glm::uvec3 &amp;pos) override</argsstring>
+        <name>set</name>
+        <qualifiedname>foxl::BasicSVO::set</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1a2c37b57de909ce121f878a7625e00cc4">set</reimplements>
+        <param>
+          <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+          <declname>voxel</declname>
+        </param>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Sets the data of a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voxel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> to copy into the specified position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to modify. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="220" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d60/classfoxl_1_1BasicSVO_1aee2b18e8e73c74ccc1f378826728caca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+        <definition>virtual Voxel &amp; foxl::BasicSVO::operator[]</definition>
+        <argsstring>(const glm::uvec3 &amp;pos) override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>foxl::BasicSVO::operator[]</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1af8772f0e02a73dce141c70000ced3e76">operator[]</reimplements>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Get a mutable reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A mutable reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="222" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d60/classfoxl_1_1BasicSVO_1a55fd02daff6e0894f0bd10d40545085f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> &amp;</type>
+        <definition>virtual const Voxel &amp; foxl::BasicSVO::operator[]</definition>
+        <argsstring>(const glm::uvec3 &amp;pos) const override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>foxl::BasicSVO::operator[]</qualifiedname>
+        <reimplements refid="d3/d15/classfoxl_1_1VoxelStorage_1a91e878869a0283c8d3b63cf7f00b2577">operator[]</reimplements>
+        <param>
+          <type>const glm::uvec3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Get a constant reference to a <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at a specific position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (3-d index) of the voxel to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to the <ref refid="d6/d5f/structfoxl_1_1Voxel" kindref="compound">Voxel</ref> at the specified position.</para>
+</simplesect>
+This is equivalent to <ref refid="de/d60/classfoxl_1_1BasicSVO_1a7f97e48a371b7bb5511330e053ce5c89" kindref="member">get</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="223" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d60/classfoxl_1_1BasicSVO_1abc1b5d708b011d2027bfb424f4945b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foxl::BasicSVO::~BasicSVO</definition>
+        <argsstring>()</argsstring>
+        <name>~BasicSVO</name>
+        <qualifiedname>foxl::BasicSVO::~BasicSVO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/foxl/data.hpp" line="225" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A common form of voxel storage based on a hierarchical structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure consists of many nodes. Each node is either a single voxel, is completely empty, or has 8 child nodes. <linebreak/>
+ It&apos;s a bit complex to implement, and has logarithmic-time access, but uses less memory than a dense grid for mostly empty storage. <linebreak/>
+ It also allows for extremely fast raycasting by providing simple empty space skipping. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>foxl::BasicSVO</label>
+        <link refid="de/d60/classfoxl_1_1BasicSVO"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>foxl::VoxelStorage</label>
+        <link refid="d3/d15/classfoxl_1_1VoxelStorage"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>foxl::BasicSVO</label>
+        <link refid="de/d60/classfoxl_1_1BasicSVO"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>foxl::VoxelStorage</label>
+        <link refid="d3/d15/classfoxl_1_1VoxelStorage"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/foxl/data.hpp" line="155" column="1" bodyfile="include/foxl/data.hpp" bodystart="155" bodyend="229"/>
+    <listofallmembers>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1af65f2e046787c0b1e6682033b2bcd162" prot="public" virt="non-virtual"><scope>foxl::BasicSVO</scope><name>BasicSVO</name></member>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1a84abb8eb2b39974d949b7fc2777c674e" prot="private" virt="non-virtual"><scope>foxl::BasicSVO</scope><name>dims</name></member>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1a7f97e48a371b7bb5511330e053ce5c89" prot="public" virt="virtual"><scope>foxl::BasicSVO</scope><name>get</name></member>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1aee2b18e8e73c74ccc1f378826728caca" prot="public" virt="virtual"><scope>foxl::BasicSVO</scope><name>operator[]</name></member>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1a55fd02daff6e0894f0bd10d40545085f" prot="public" virt="virtual"><scope>foxl::BasicSVO</scope><name>operator[]</name></member>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1aa447d2ba413111920e6476f2144b6092" prot="private" virt="non-virtual"><scope>foxl::BasicSVO</scope><name>root</name></member>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1a603b64d5ebe94be5189ec3ac9b493ebd" prot="public" virt="virtual"><scope>foxl::BasicSVO</scope><name>set</name></member>
+      <member refid="de/d60/classfoxl_1_1BasicSVO_1abc1b5d708b011d2027bfb424f4945b23" prot="public" virt="non-virtual"><scope>foxl::BasicSVO</scope><name>~BasicSVO</name></member>
+      <member refid="d3/d15/classfoxl_1_1VoxelStorage_1a5428c4dd100db6a336957ce8bd0747a5" prot="public" virt="pure-virtual"><scope>foxl::BasicSVO</scope><name>~VoxelStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

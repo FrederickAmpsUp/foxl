@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dd/da0/todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>File <ref refid="da/d85/data_8hpp" kindref="compound">data.hpp</ref>  </term></varlistentry>
+<listitem><para><anchor id="dd/da0/todo_1_todo000001"/>Finish documentation, the <ref refid="de/d60/classfoxl_1_1BasicSVO" kindref="compound">foxl::BasicSVO</ref> class and add a <computeroutput>CompressedSVOBuffer</computeroutput> class. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="dd/da0/todo"/>
+  </compounddef>
+</doxygen>

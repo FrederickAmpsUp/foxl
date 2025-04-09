@@ -13,35 +13,35 @@
 </entry></row>
 <row>
 <entry thead="no"><para>Classes   </para>
-</entry><entry thead="no"><para>100.0% (2/2)    </para>
+</entry><entry thead="no"><para>100.0% (3/3)    </para>
 </entry></row>
 <row>
 <entry thead="no"><para>Files   </para>
-</entry><entry thead="no"><para>0.0% (0/4)    </para>
+</entry><entry thead="no"><para>20.0% (1/5)    </para>
 </entry></row>
 <row>
 <entry thead="no"><para>Functions   </para>
-</entry><entry thead="no"><para>38.5% (5/13)    </para>
+</entry><entry thead="no"><para>80.6% (25/31)    </para>
 </entry></row>
 <row>
 <entry thead="no"><para>Namespaces   </para>
-</entry><entry thead="no"><para>0.0% (0/2)    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>Pages   </para>
-</entry><entry thead="no"><para>100.0% (1/1)    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>Structs   </para>
-</entry><entry thead="no"><para>50.0% (1/2)    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>Variables   </para>
 </entry><entry thead="no"><para>0.0% (0/3)    </para>
 </entry></row>
 <row>
+<entry thead="no"><para>Pages   </para>
+</entry><entry thead="no"><para>100.0% (2/2)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Structs   </para>
+</entry><entry thead="no"><para>66.7% (2/3)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Variables   </para>
+</entry><entry thead="no"><para>54.5% (6/11)    </para>
+</entry></row>
+<row>
 <entry thead="no"><para>Total   </para>
-</entry><entry thead="no"><para>33.3% (9/27)   </para>
+</entry><entry thead="no"><para>67.2% (39/58)   </para>
 </entry></row>
 </table>
 </para>

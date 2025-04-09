@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="d4/d78/math_8hpp" kind="file" language="C++">
+    <compoundname>math.hpp</compoundname>
+    <includes local="no">glm/glm.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/foxl/math.hpp</label>
+        <link refid="d4/d78/math_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>glm/glm.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d1/de5/namespacefoxl">foxl</innernamespace>
+    <innernamespace refid="da/d32/namespacefoxl_1_1math">foxl::math</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/glm.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d1/de5/namespacefoxl" kindref="compound">foxl</ref><sp/>{</highlight></codeline>
+<codeline lineno="6" refid="da/d32/namespacefoxl_1_1math" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">math<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="da/d32/namespacefoxl_1_1math_1ac23a5ebdcf32a561780dc923f7c9dbe7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="da/d32/namespacefoxl_1_1math_1ac23a5ebdcf32a561780dc923f7c9dbe7" kindref="member">next_power_of_2</ref>(uint32_t<sp/>x);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="da/d32/namespacefoxl_1_1math_1aff01c445678420ff243f82aba9da6324" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>glm::uvec3<sp/><ref refid="da/d32/namespacefoxl_1_1math_1aff01c445678420ff243f82aba9da6324" kindref="member">round_up_to_cube_pow2</ref>(glm::uvec3<sp/>v);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/foxl/math.hpp"/>
+  </compounddef>
+</doxygen>

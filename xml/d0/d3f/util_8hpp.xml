@@ -4,6 +4,7 @@
     <compoundname>util.hpp</compoundname>
     <includes local="no">fmt/core.h</includes>
     <includes local="no">glm/glm.hpp</includes>
+    <includes local="no">stdexcept</includes>
     <incdepgraph>
       <node id="1">
         <label>include/foxl/util.hpp</label>
@@ -12,12 +13,17 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>fmt/core.h</label>
       </node>
       <node id="3">
         <label>glm/glm.hpp</label>
+      </node>
+      <node id="4">
+        <label>stdexcept</label>
       </node>
     </incdepgraph>
     <innerclass refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4" prot="public">fmt::formatter&lt; glm::uvec3 &gt;</innerclass>
@@ -30,18 +36,18 @@
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fmt/core.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/glm.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>glm::uvec3<sp/>formatter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="8" refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">fmt::formatter&lt;glm::uvec3&gt;<sp/>:<sp/>fmt::formatter&lt;std::string&gt;<sp/>{</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Format<sp/>the<sp/>glm::uvec3<sp/>as<sp/>a<sp/>tuple<sp/>(x,<sp/>y,<sp/>z)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>FormatContext&gt;</highlight></codeline>
-<codeline lineno="11" refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4_1ae34f264526b6038f2e5a59e9084cb3f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4_1ae34f264526b6038f2e5a59e9084cb3f4" kindref="member">format</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>vec,<sp/>FormatContext&amp;<sp/>ctx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fmt::formatter&lt;std::string&gt;::format(</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(</highlight><highlight class="stringliteral">&quot;({},<sp/>{},<sp/>{})&quot;</highlight><highlight class="normal">,<sp/>vec.x,<sp/>vec.y,<sp/>vec.z),<sp/>ctx);</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="15"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>glm::uvec3<sp/>formatter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="9" refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">fmt::formatter&lt;glm::uvec3&gt;<sp/>:<sp/>fmt::formatter&lt;std::string&gt;<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Format<sp/>the<sp/>glm::uvec3<sp/>as<sp/>a<sp/>tuple<sp/>(x,<sp/>y,<sp/>z)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>FormatContext&gt;</highlight></codeline>
+<codeline lineno="12" refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4_1ae34f264526b6038f2e5a59e9084cb3f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d6/d95/structfmt_1_1formatter_3_01glm_1_1uvec3_01_4_1ae34f264526b6038f2e5a59e9084cb3f4" kindref="member">format</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::uvec3&amp;<sp/>vec,<sp/>FormatContext&amp;<sp/>ctx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fmt::formatter&lt;std::string&gt;::format(</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fmt::format(</highlight><highlight class="stringliteral">&quot;({},<sp/>{},<sp/>{})&quot;</highlight><highlight class="normal">,<sp/>vec.x,<sp/>vec.y,<sp/>vec.z),<sp/>ctx);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="include/foxl/util.hpp"/>
   </compounddef>

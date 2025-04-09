@@ -18,6 +18,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -105,6 +112,9 @@ $(function(){initNavTree('d5/d57/classfoxl_1_1DenseVoxelGrid.html','../../'); in
 </div><!--header-->
 <div class="contents">
 
+<p>The simplest and fastest form of voxel data storage.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../da/d85/data_8hpp_source.html">data.hpp</a>&gt;</code></p>
 
 <p>Inherits <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">foxl::VoxelStorage</a>.</p>
@@ -112,23 +122,31 @@ $(function(){initNavTree('d5/d57/classfoxl_1_1DenseVoxelGrid.html','../../'); in
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afe59f131be61deb424cafc940cd6c34e" id="r_afe59f131be61deb424cafc940cd6c34e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe59f131be61deb424cafc940cd6c34e">DenseVoxelGrid</a> (const glm::uvec3 &amp;dims)</td></tr>
+<tr class="memdesc:afe59f131be61deb424cafc940cd6c34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty voxel grid with the specified dimensions.  <br /></td></tr>
 <tr class="separator:afe59f131be61deb424cafc940cd6c34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744af785836a2586f80f96a3f5c1882e" id="r_a744af785836a2586f80f96a3f5c1882e"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a744af785836a2586f80f96a3f5c1882e">get</a> (const glm::uvec3 &amp;pos) const override</td></tr>
+<tr class="memdesc:a744af785836a2586f80f96a3f5c1882e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a constant reference to a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position.  <br /></td></tr>
 <tr class="separator:a744af785836a2586f80f96a3f5c1882e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8df9fe72ae5603ca323a9f815583b9b" id="r_aa8df9fe72ae5603ca323a9f815583b9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8df9fe72ae5603ca323a9f815583b9b">set</a> (const <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> &amp;voxel, const glm::uvec3 &amp;pos) override</td></tr>
+<tr class="memdesc:aa8df9fe72ae5603ca323a9f815583b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the data of a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position.  <br /></td></tr>
 <tr class="separator:aa8df9fe72ae5603ca323a9f815583b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6c5628e46df8c6a5f14a2dfeeabdb2" id="r_a4a6c5628e46df8c6a5f14a2dfeeabdb2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6c5628e46df8c6a5f14a2dfeeabdb2">operator[]</a> (const glm::uvec3 &amp;pos) override</td></tr>
+<tr class="memdesc:a4a6c5628e46df8c6a5f14a2dfeeabdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a mutable reference to a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position.  <br /></td></tr>
 <tr class="separator:a4a6c5628e46df8c6a5f14a2dfeeabdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9b9c74f1ed7b0caf2b061cf241694c9" id="r_ae9b9c74f1ed7b0caf2b061cf241694c9"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9b9c74f1ed7b0caf2b061cf241694c9">operator[]</a> (const glm::uvec3 &amp;pos) const override</td></tr>
+<tr class="memdesc:ae9b9c74f1ed7b0caf2b061cf241694c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a constant reference to a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position.  <br /></td></tr>
 <tr class="separator:ae9b9c74f1ed7b0caf2b061cf241694c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c3bed62bf1c957c3a0a115b3336e910" id="r_a3c3bed62bf1c957c3a0a115b3336e910"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c3bed62bf1c957c3a0a115b3336e910">~DenseVoxelGrid</a> ()</td></tr>
-<tr class="separator:a3c3bed62bf1c957c3a0a115b3336e910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b85f501e8af0dcb77a648cb23fe1b2f" id="r_a3b85f501e8af0dcb77a648cb23fe1b2f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b85f501e8af0dcb77a648cb23fe1b2f">~DenseVoxelGrid</a> () override=default</td></tr>
+<tr class="separator:a3b85f501e8af0dcb77a648cb23fe1b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfoxl_1_1VoxelStorage"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classfoxl_1_1VoxelStorage')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html">foxl::VoxelStorage</a></td></tr>
-<tr class="memitem:a7239a9db6f13a9ffce16a047b91d271d inherit pub_methods_classfoxl_1_1VoxelStorage" id="r_a7239a9db6f13a9ffce16a047b91d271d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#a7239a9db6f13a9ffce16a047b91d271d">~VoxelStorage</a> ()=0</td></tr>
-<tr class="separator:a7239a9db6f13a9ffce16a047b91d271d inherit pub_methods_classfoxl_1_1VoxelStorage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5428c4dd100db6a336957ce8bd0747a5 inherit pub_methods_classfoxl_1_1VoxelStorage" id="r_a5428c4dd100db6a336957ce8bd0747a5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#a5428c4dd100db6a336957ce8bd0747a5">~VoxelStorage</a> ()=0</td></tr>
+<tr class="memdesc:a5428c4dd100db6a336957ce8bd0747a5 inherit pub_methods_classfoxl_1_1VoxelStorage"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is required because C++ decides to destruct the pure virtual class that should never be constructed.  <br /></td></tr>
+<tr class="separator:a5428c4dd100db6a336957ce8bd0747a5 inherit pub_methods_classfoxl_1_1VoxelStorage"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The simplest form of voxel data storage, just a 3d array of voxels. </p>
+<div class="textblock"><p>The simplest and fastest form of voxel data storage. </p>
+<p>This structure stores voxels in a dense grid, or a 3-d array of voxels. <br  />
+ It's very simple to implement and very fast to access, but uses a lot of memory and is slow for tasks like raycasting. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afe59f131be61deb424cafc940cd6c34e" name="afe59f131be61deb424cafc940cd6c34e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe59f131be61deb424cafc940cd6c34e">&#9670;&#160;</a></span>DenseVoxelGrid()</h2>
@@ -144,23 +162,38 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates an empty voxel grid (initialized to matid 0) with the specified dimensions. </p>
+
+<p>Creates an empty voxel grid with the specified dimensions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dims</td><td>The dimensions (XYZ) of the voxel grid. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a3c3bed62bf1c957c3a0a115b3336e910" name="a3c3bed62bf1c957c3a0a115b3336e910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c3bed62bf1c957c3a0a115b3336e910">&#9670;&#160;</a></span>~DenseVoxelGrid()</h2>
+<a id="a3b85f501e8af0dcb77a648cb23fe1b2f" name="a3b85f501e8af0dcb77a648cb23fe1b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b85f501e8af0dcb77a648cb23fe1b2f">&#9670;&#160;</a></span>~DenseVoxelGrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">foxl::DenseVoxelGrid::~DenseVoxelGrid </td>
+          <td class="memname">virtual foxl::DenseVoxelGrid::~DenseVoxelGrid </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -188,7 +221,16 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a constref to a specific voxel. </p>
+
+<p>Get a constant reference to a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>The position (3-d index) of the voxel to access. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at the specified position.</dd></dl>
+<p>To modify the voxel, use <a class="el" href="#a4a6c5628e46df8c6a5f14a2dfeeabdb2">operator[]</a> or <a class="el" href="#aa8df9fe72ae5603ca323a9f815583b9b">set</a>. </p>
 
 <p>Implements <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#a60ea83c09932f0d954af9f75930beea9">foxl::VoxelStorage</a>.</p>
 
@@ -217,6 +259,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get a constant reference to a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>The position (3-d index) of the voxel to access. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at the specified position.</dd></dl>
+<p>This is equivalent to <a class="el" href="#a744af785836a2586f80f96a3f5c1882e">get</a>. </p>
+
 <p>Implements <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#a91e878869a0283c8d3b63cf7f00b2577">foxl::VoxelStorage</a>.</p>
 
 </div>
@@ -243,6 +295,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get a mutable reference to a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>The position (3-d index) of the voxel to access. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at the specified position. </dd></dl>
 
 <p>Implements <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#af8772f0e02a73dce141c70000ced3e76">foxl::VoxelStorage</a>.</p>
 
@@ -274,7 +335,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copies the voxel into the storage. </p>
+
+<p>Sets the data of a <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> at a specific position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">voxel</td><td>The <a class="el" href="../../d6/d5f/structfoxl_1_1Voxel.html">Voxel</a> to copy into the specified position. </td></tr>
+    <tr><td class="paramname">pos</td><td>The position (3-d index) of the voxel to modify. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="../../d3/d15/classfoxl_1_1VoxelStorage.html#a2c37b57de909ce121f878a7625e00cc4">foxl::VoxelStorage</a>.</p>
 

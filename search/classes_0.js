@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['densevoxelgrid_0',['DenseVoxelGrid',['../d5/d57/classfoxl_1_1DenseVoxelGrid.html',1,'foxl']]]
+  ['basicsvo_0',['BasicSVO',['../de/d60/classfoxl_1_1BasicSVO.html',1,'foxl']]]
 ];

@@ -2,6 +2,7 @@
 
 #include <fmt/core.h>
 #include <glm/glm.hpp>
+#include <stdexcept>
 
 // glm::uvec3 formatter
 template <>
@@ -13,4 +14,3 @@ struct fmt::formatter<glm::uvec3> : fmt::formatter<std::string> {
             fmt::format("({}, {}, {})", vec.x, vec.y, vec.z), ctx);
     }
 };
-

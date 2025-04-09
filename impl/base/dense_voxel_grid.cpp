@@ -11,7 +11,7 @@ DenseVoxelGrid::DenseVoxelGrid(const glm::uvec3& dims) {
 	this->dims = dims;
 
 	for (size_t i = 0; i < size; ++i) {
-		this->data[i] = Voxel { 0 };
+		this->data[i] = Voxel();
 	}
 }
 
@@ -24,13 +24,11 @@ void DenseVoxelGrid::set(const Voxel& voxel, const glm::uvec3& pos) {
 }
 
 Voxel& DenseVoxelGrid::operator[](const glm::uvec3& pos) {
-	unsigned int idx = this->index(pos);
-
-	return this->data[idx];
+	return this->data[this->index(pos)];
 }
 
 const Voxel& DenseVoxelGrid::operator[](const glm::uvec3& pos) const {
-	return (*this)[pos];
+	return this->data[this->index(pos)];
 }
 
 unsigned int DenseVoxelGrid::index(const glm::uvec3& pos) const {

@@ -27,7 +27,7 @@ if(NOT glm_FOUND)
 	FetchContent_MakeAvailable(glm)
 else()
 	add_library(glm INTERFACE)
-	target_link_libraries(glm glm::glm PUBLIC)
+	target_link_libraries(glm INTERFACE glm::glm)
 endif()
 
 target_link_libraries(foxl_base glm::glm fmt::fmt)
